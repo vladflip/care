@@ -132,7 +132,7 @@ a {
   transition: height 300ms ease-in-out;
 }
 .project:hover.project:after {
-  height: 10px;
+  height: 5px;
 }
 .project_header {
   font-size: 1.7em;
