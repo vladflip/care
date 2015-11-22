@@ -95,14 +95,10 @@ a {
 .menu_sub li:hover {
   background-color: #30b245 !important;
 }
-.collage {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: auto;
+.collage img {
+  width: 100%;
   z-index: -20;
   position: relative;
-  height: 405px;
 }
 .projects {
   background-color: #e4e4e4;
@@ -120,14 +116,20 @@ a {
           justify-content: space-between;
 }
 .project {
-  color: #30b245;
   width: 300px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 250ms ease-in-out;
 }
 .project_header {
   font-size: 1.7em;
+  color: #30b245;
+  transition: color 250ms ease-in-out;
 }
 .project_excerpt {
   color: #1d1e18;
   margin-top: 20px;
   text-align: center;
+  transition: color 250ms ease-in-out;
 }

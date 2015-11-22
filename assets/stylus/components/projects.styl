@@ -12,13 +12,26 @@
 		
 	
 .project
-	color $green
 	width 300px
+	cursor pointer
+	padding 10px
+	border-radius 10px
+	
+	transition background-color 250ms ease-in-out
 	
 	&_header
 		font-size 1.7em
+		color $green
+		transition color 250ms ease-in-out
 		
 	&_excerpt
 		color #1D1E18
 		margin-top 20px
 		text-align center
+		transition color 250ms ease-in-out
+		
+	// &:hover
+	// 	background-color $green
+	// &:hover &_header,
+	// &:hover &_excerpt
+	// 	color white
