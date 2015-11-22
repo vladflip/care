@@ -119,17 +119,27 @@ a {
   width: 300px;
   cursor: pointer;
   padding: 10px;
-  border-radius: 10px;
-  transition: background-color 250ms ease-in-out;
+  position: relative;
+}
+.project:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 0;
+  background-color: #30b245;
+  transition: height 300ms ease-in-out;
+}
+.project:hover.project:after {
+  height: 10px;
 }
 .project_header {
   font-size: 1.7em;
   color: #30b245;
-  transition: color 250ms ease-in-out;
 }
 .project_excerpt {
   color: #1d1e18;
   margin-top: 20px;
   text-align: center;
-  transition: color 250ms ease-in-out;
 }
