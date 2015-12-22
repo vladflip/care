@@ -14,7 +14,7 @@ a {
 }
 .footer {
   padding-top: 20px;
-  height: 250px;
+  height: 300px;
   background-color: #e4e4e4;
 }
 .footer .container {
@@ -27,19 +27,40 @@ a {
 }
 .footer_list {
   color: #30b245;
+  width: 250px;
 }
 .footer_list div {
+  padding-bottom: 5px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #c2c2c2;
 }
-.footer_header {
+.footer_name {
   color: #30b245;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5em;
 }
-.footer_contact {
+.footer_header {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+.footer_phone {
+  margin-top: 10px;
   text-align: right;
+  color: #4ccf61;
   font-weight: 400;
   font-size: 1.2em;
+}
+.footer_image {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer_image img {
+  width: 200px;
+}
+.footer_mail {
+  font-size: 0.9em;
+  color: #b6b6b6;
 }
 .header {
   height: 220px;

@@ -1,6 +1,6 @@
 .footer
 	padding-top 20px
-	height 250px
+	height 300px
 	background-color $grey
 	
 	.container
@@ -9,16 +9,36 @@
 		
 	&_list
 		color $green
+		width 250px
 		
 		div
+			padding-bottom 5px
 			margin-bottom 10px
+			border-bottom 1px solid darken($grey, 15%)
+			
+	&_name
+		color $green
+		font-weight 400
+		font-size 1.5em
 			
 	&_header
-		color $green
-		font-weight 700
+		color darken($grey, 30%)
+		font-weight 400
 		font-size 1.5em
 	
-	&_contact
+	&_phone
+		margin-top 10px
 		text-align right
+		color lighten($green, 20%)
 		font-weight 400
 		font-size 1.2em
+		
+	&_image
+		text-align center
+		padding-bottom 20px
+		img
+			width 200px
+			
+	&_mail
+		font-size .9em
+		color darken($grey, 20%)
