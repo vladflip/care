@@ -44,14 +44,14 @@
 	&:after
 		content ''
 		display block
-		width 120px
+		width 0px
 		margin 15px auto
 		height 5px
-		background-color #444
+		background-color $green
 		transition width 300ms ease-in-out
 	
 	&_header
-		color $black
+		color $green
 		margin 10px 0
 		transition color 300ms ease-in-out
 	
@@ -60,7 +60,6 @@
 	
 	&:hover&:after
 		width 100%
-		background-color $green
 	
 	&:hover &_header
 		color $green
