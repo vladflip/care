@@ -1,0 +1,43 @@
+.news
+	padding 20px 0
+	&_header
+		color $black
+		margin-top 0
+		
+	&_list
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		
+.new
+	width 300px
+	margin-bottom 20px
+	cursor pointer
+	
+	&_image
+		border-radius 5px
+		overflow hidden
+	
+	&:after
+		content ''
+		display block
+		width 120px
+		margin 15px auto
+		height 5px
+		background-color #444
+		transition width 300ms ease-in-out
+	
+	&_header
+		color $black
+		margin 10px 0
+		transition color 300ms ease-in-out
+	
+	&_excerpt
+		color #666
+	
+	&:hover&:after
+		width 100%
+		background-color $green
+	
+	&:hover &_header
+		color $green
