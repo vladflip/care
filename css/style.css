@@ -13,8 +13,33 @@ a {
   color: inherit;
 }
 .footer {
-  height: 100px;
+  padding-top: 20px;
+  height: 250px;
   background-color: #e4e4e4;
+}
+.footer .container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer_list {
+  color: #30b245;
+}
+.footer_list div {
+  margin-bottom: 10px;
+}
+.footer_header {
+  color: #30b245;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.footer_contact {
+  text-align: right;
+  font-weight: 400;
+  font-size: 1.2em;
 }
 .header {
   height: 220px;
