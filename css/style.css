@@ -99,6 +99,43 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.header_info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_phone {
+  color: #a0a0a0;
+}
+.header_phone span:nth-child(2) {
+  margin-left: 5px;
+  font-size: 1.8em;
+}
+.header_lang {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header_lang div {
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.header_lang div:first-child {
+  background-color: #2ba03e;
+  color: #fff;
+}
+.header_lang div span {
+  padding: 8px;
+  display: block;
+}
 .menu_list,
 .menu_sub {
   list-style: none;
@@ -162,7 +199,7 @@ a {
   text-align: center;
 }
 .collage img {
-  width: 60%;
+  width: 70%;
   z-index: -20;
   position: relative;
 }
