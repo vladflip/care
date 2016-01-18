@@ -169,8 +169,10 @@ a {
           transform: translateY(0px);
   border-color: #e4e4e4;
   background-color: #fff;
+  visibility: visible;
 }
 .menu_sub {
+  visibility: hidden;
   z-index: 0;
   color: #191a14;
   background-color: transparent;
@@ -185,8 +187,8 @@ a {
   opacity: 0;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  transition: -webkit-transform 250ms, opacity 200ms, background-color 200ms;
-  transition: transform 250ms, opacity 200ms, background-color 200ms;
+  transition: -webkit-transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms;
+  transition: transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms;
 }
 .menu_sub li {
   transition: background-color 200ms ease-in-out;

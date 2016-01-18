@@ -83,8 +83,10 @@
 		transform translateY(0px)
 		border-color $grey
 		background-color white
+		visibility visible
 
 	&_sub
+		visibility hidden
 		z-index 0
 		color darken($black, 15%)
 		background-color transparent
@@ -96,7 +98,7 @@
 		width 220px
 		opacity 0
 		transform translateY(-10px)
-		transition transform 250ms, opacity 200ms, background-color 200ms
+		transition transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms
 		
 		li
 			transition background-color 200ms ease-in-out
