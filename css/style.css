@@ -57,6 +57,8 @@ a {
   color: #b6b6b6;
 }
 .header {
+  position: relative;
+  z-index: 10;
   height: 150px;
   box-shadow: 0px 0.1em 0.4em rgba(74,74,74,0.3);
 }
@@ -130,6 +132,9 @@ a {
   padding: 8px;
   display: block;
 }
+.menu {
+  color: #424436;
+}
 .menu_list,
 .menu_sub {
   list-style: none;
@@ -155,39 +160,39 @@ a {
   position: relative;
   transition: color 250ms ease-in-out;
 }
-.menu_list li:hover {
+.menu_list > li:hover {
   color: #2ba03e;
 }
 .menu_list li:hover .menu_sub {
   opacity: 1;
-  z-index: 10;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  visibility: visible;
-  background-color: #333;
+  border-color: #e4e4e4;
+  background-color: #fff;
 }
 .menu_sub {
+  z-index: 0;
+  color: #191a14;
+  background-color: transparent;
+  border-left: 5px solid #e4e4e4;
+  border-right: 5px solid #e4e4e4;
   position: absolute;
-  color: #fff;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 0.8em;
-  width: 200px;
+  width: 220px;
   opacity: 0;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  visibility: hidden;
-  transition: -webkit-transform 250ms, opacity 200ms, visibility 200ms, background-color 200ms;
-  transition: transform 250ms, opacity 200ms, visibility 200ms, background-color 200ms;
-  background-color: transparent;
-  z-index: -10;
+  transition: -webkit-transform 250ms, opacity 200ms, background-color 200ms;
+  transition: transform 250ms, opacity 200ms, background-color 200ms;
 }
 .menu_sub li {
   transition: background-color 200ms ease-in-out;
 }
 .menu_sub li:hover {
-  background-color: #30b245 !important;
+  background-color: #e4e4e4;
 }
 .collage {
   text-align: center;
