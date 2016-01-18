@@ -57,8 +57,6 @@ a {
   color: #b6b6b6;
 }
 .header {
-  position: relative;
-  z-index: 10;
   height: 150px;
   box-shadow: 0px 0.1em 0.4em rgba(74,74,74,0.3);
 }
@@ -173,7 +171,6 @@ a {
 }
 .menu_sub {
   visibility: hidden;
-  z-index: 0;
   color: #191a14;
   background-color: transparent;
   border-left: 5px solid #e4e4e4;
@@ -191,10 +188,11 @@ a {
   transition: transform 250ms, opacity 200ms, background-color 200ms, visibility 200ms;
 }
 .menu_sub li {
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 .menu_sub li:hover {
   background-color: #e4e4e4;
+  color: #2ba03e;
 }
 .collage {
   text-align: center;
