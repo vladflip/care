@@ -13,8 +13,7 @@ a {
   color: inherit;
 }
 .footer {
-  padding-top: 20px;
-  height: 300px;
+  padding: 20px 0;
   background-color: #e4e4e4;
 }
 .footer .container {
@@ -31,13 +30,8 @@ a {
 }
 .footer_list div {
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #c2c2c2;
-}
-.footer_name {
-  color: #30b245;
-  font-weight: 400;
-  font-size: 1.5em;
 }
 .footer_header {
   color: #a0a0a0;
@@ -53,10 +47,9 @@ a {
 }
 .footer_image {
   text-align: center;
-  padding-bottom: 20px;
 }
 .footer_image img {
-  width: 200px;
+  width: 320px;
 }
 .footer_mail {
   font-size: 0.9em;
