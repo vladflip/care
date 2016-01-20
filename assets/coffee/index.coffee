@@ -1,9 +1,6 @@
 header = $ '#header'
 
-header.sticky()
-
-header.on 'sticky-update', ->
-	alert 'fuck'
+# header.sticky()
 
 $(document).scroll ->
 	scroll = $(this).scrollTop() > 150

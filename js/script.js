@@ -3,12 +3,6 @@ var header;
 
 header = $('#header');
 
-header.sticky();
-
-header.on('sticky-update', function() {
-  return alert('fuck');
-});
-
 $(document).scroll(function() {
   var scroll;
   scroll = $(this).scrollTop() > 150;
